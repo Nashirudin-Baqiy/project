@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_grad_1"
+    tools:context="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Telemedicine.Pendaftaran.ActivityTMKonsulAddPoli">
+    <include layout="@layout/part_actionbar"/>
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@drawable/button_border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Poli"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silahkan Pilih Poli"
+            android:textSize="14sp"
+            android:textColor="@color/colorGray"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"/>
+        <RelativeLayout
+            android:id="@+id/layout_search"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:background="@drawable/input_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_alignParentLeft="true"
+                android:id="@+id/btn_search"
+                android:gravity="center"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+                <ImageView
+                    android:src="@drawable/ic_search"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+            <EditText
+                android:layout_toRightOf="@+id/btn_search"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textSize="12sp"
+                android:hint="Search..."
+                android:maxLines="1"
+                android:id="@+id/input_search"
+                android:background="@color/colorWhite"
+                android:layout_width="265dp"
+                android:layout_height="35dp" />
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:id="@+id/btn_clear"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+                <ImageView
+                    android:src="@drawable/ic_cancel"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/button_kembali"
+            android:layout_width="100dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Kembali"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+</LinearLayout>

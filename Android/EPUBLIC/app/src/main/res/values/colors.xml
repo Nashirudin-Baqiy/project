@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#47ab9e</color>
+    <color name="colorPrimaryDark">#1da795</color>
+    <color name="colorAccent">#71a69f</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray">#989ca0</color>
+    <color name="colorLine">#dadada</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorY">#ffe100</color>
+
+
+    <color name="colorHijau9b">#00b09b</color>
+    <color name="colorBlue">#3660b4</color>
+    <color name="backgroundHeadline">#784dc681</color>
+    <color name="backgroundLayout">#FFF7F7F7</color>
+
+    <!-- Chat Activity -->
+    <color name="localBackground">#827b92</color>
+    <color name="remoteBackground">#484258</color>
+</resources>

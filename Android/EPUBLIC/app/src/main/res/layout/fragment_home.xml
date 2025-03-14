@@ -1,0 +1,454 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="id.co.rsnasionaldiponegoro.epublic.Views.Fragment.FragmentHome">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/part_bar_home"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <LinearLayout
+                    android:id="@+id/slider_lay"
+                    android:background="@drawable/ic_header_rsia"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp">
+                    <ss.com.bannerslider.views.BannerSlider
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:animateIndicators="true"
+                        app:loopSlides="true"
+                        app:unselected_slideIndicator="@drawable/unselected_slide_indicator"
+                        app:selected_slideIndicator="@drawable/selected_slide_indicator"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_below="@+id/slider_lay"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:id="@+id/headline_text"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <GridLayout
+                    android:layout_centerHorizontal="true"
+                    android:columnCount="3"
+                    android:rowCount="5"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    /* Menu */
+                    <LinearLayout
+                        android:id="@+id/button_bunda"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:background="@drawable/button_border"
+                        android:layout_height="110dp"
+                        android:layout_width="110dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:src="@drawable/ic_bunda"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+                        <TextView
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Profil RS"
+                            android:lines="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/button_pendaftaran"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:background="@drawable/button_border"
+                        android:layout_height="110dp"
+                        android:layout_width="110dp">
+                        <ImageView
+                            android:src="@drawable/ic_pendaftaran"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Pendaftaran"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/button_ticketing"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_row="0"
+                        android:layout_column="2"
+                        android:background="@drawable/button_border"
+                        android:layout_height="110dp"
+                        android:layout_width="110dp">
+                        <ImageView
+                            android:src="@drawable/ticket_booking"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Tiket Booking"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/button_emergency"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_row="3"
+                        android:layout_column="2"
+                        android:background="@drawable/button_border"
+                        android:layout_height="110dp"
+                        android:layout_width="110dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:src="@drawable/siren"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+                        <TextView
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Emergency"
+                            android:lines="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/button_tm"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:background="@drawable/button_border"
+                        android:layout_height="110dp"
+                        android:layout_width="110dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:src="@drawable/ic_konsul_dokter_plus"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+                        <TextView
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Telemedicine"
+                            android:lines="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/button_jadwallayanan"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:background="@drawable/button_border"
+                        android:layout_height="110dp"
+                        android:layout_width="110dp">
+                        <ImageView
+                            android:src="@drawable/ic_jadwal_layanan"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+                        <TextView
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Jadwal Layanan"
+                            android:lines="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/button_antrian"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_row="2"
+                        android:layout_column="0"
+                        android:background="@drawable/button_border"
+                        android:layout_height="110dp"
+                        android:layout_width="110dp">
+                        <ImageView
+                            android:src="@drawable/ic_antrian"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+                        <TextView
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Antrian"
+                            android:lines="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/button_tanyabunda"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_row="2"
+                        android:layout_column="1"
+                        android:background="@drawable/button_border"
+                        android:layout_height="110dp"
+                        android:layout_width="110dp">
+                        <ImageView
+                            android:src="@drawable/ic_tanyabunda"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+                        <TextView
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Tanya RS"
+                            android:lines="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/button_diarycare"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_row="2"
+                        android:layout_column="2"
+                        android:background="@drawable/button_border"
+                        android:layout_height="110dp"
+                        android:layout_width="110dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:src="@drawable/ic_diarycare"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+                        <TextView
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Riwayat Kunjungan"
+                            android:lines="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/button_help"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:background="@drawable/button_border"
+                        android:layout_height="110dp"
+                        android:layout_width="110dp">
+                        <ImageView
+                            android:src="@drawable/ic_contact"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+                        <TextView
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Help"
+                            android:lines="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/button_bundacare"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:background="@drawable/button_border"
+                        android:layout_height="110dp"
+                        android:layout_width="110dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:src="@drawable/ic_bundacare"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+                        <TextView
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Bunda Care"
+                            android:lines="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/button_promo"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:background="@drawable/button_border"
+                        android:layout_height="110dp"
+                        android:layout_width="110dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:src="@drawable/ic_promo"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+                        <TextView
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="INFOMO"
+                            android:lines="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/button_lu"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:background="@drawable/button_border"
+                        android:layout_height="110dp"
+                        android:layout_width="110dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:src="@drawable/ic_lu"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+                        <TextView
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Layanan Unggulan"
+                            android:lines="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:id="@+id/button_fasilitas"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_row="3"
+                        android:layout_column="1"
+                        android:background="@drawable/button_border"
+                        android:layout_height="110dp"
+                        android:layout_width="110dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:src="@drawable/ic_facility"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+                        <TextView
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Fasilitas"
+                            android:lines="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/button_suara_konsumen"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_row="4"
+                        android:layout_column="0"
+                        android:background="@drawable/button_border"
+                        android:layout_height="120dp"
+                        android:layout_width="110dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:src="@drawable/ic_suarakonsumen"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+                        <TextView
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Suara \nKonsumen"
+                            android:lines="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </GridLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

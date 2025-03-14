@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:id="@+id/layout_topup"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/adapter_judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="TopUp 50 Points"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/adapter_ket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Pembayaran TopUp Points Rp.50.001"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/adapter_tanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="02 Juni 2020 07:30"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/adapter_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Status: Belum Terbayar"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

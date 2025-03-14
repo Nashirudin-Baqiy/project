@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Telemedicine.Pendaftaran.ActivityTMKonsulAdd">
+    <include layout="@layout/part_actionbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/content"
+            android:background="#f2f2f2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/panel_top"
+                android:gravity="center"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telemedicine Online"
+                    android:textSize="22sp"/>
+                <ImageView
+                    android:visibility="visible"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:src="@drawable/logo_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/panel_bottom"
+                android:layout_below="@+id/panel_top"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="265dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_gravity="left"
+                        android:text="Nomor Rekam Medis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/form_nocm"
+                        android:visibility="visible"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:hint="No.CM"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:background="@drawable/input_border"
+                        android:layout_width="280dp"
+                        android:layout_height="45dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_gravity="left"
+                        android:text="Tanggal Lahir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/form_tanggal"
+                        android:visibility="visible"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:hint="Tanggal"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:background="@drawable/input_border"
+                        android:layout_width="280dp"
+                        android:layout_height="45dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_login"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="300dp"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Masuk"
+                    android:textColor="@color/colorWhite"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:textSize="10sp"
+                    android:text="Powered By : Medisimed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

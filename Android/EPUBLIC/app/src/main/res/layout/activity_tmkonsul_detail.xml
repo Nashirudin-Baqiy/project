@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Telemedicine.ActivityTMKonsulDetail">
+    <include layout="@layout/part_actionbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_border">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/detail_kdantri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Kode Antri: -"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/detail_judul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Konsultasi Rutin"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:id="@+id/detail_tgl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20 Mei 2020 07:30"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:id="@+id/detail_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status: Sudah Konsultasi"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/konsul_dokter_plus" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_border">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keluhan"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/detail_keluhan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diagnosa"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/detail_diagnosa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp" />
+                    <LinearLayout
+                        android:id="@+id/layout_obat"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Resep Dokter"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/detail_resep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Minum Vitamin ...."
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saran Dokter"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/detail_saranDokter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

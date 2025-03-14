@@ -1,0 +1,34 @@
+<resources>
+    <string name="FACEBOOK_APP_ID">314640082416545</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">33f6b32d345aa39361f54430fa2a86ff</string>
+    <string name="ak_login_protocol_scheme">ak314640082416545</string>
+    <string name="title">Title</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_search">Search...</string>
+    <string name="server_client_id">205156416148-kgoo2v9dq54vq1u4dbbc18srns3qv7gk.apps.googleusercontent.com</string>
+    <string name="maps_api">AIzaSyBl0JIKuDIcyVs-mXs7o5_aWHmjIyAnVsU</string>
+    <string name="tab_home">Home</string>
+    <string name="tab_kesehatanbunda">Info RS</string>
+    <string name="tab_inbox">Inbox</string>
+    <string name="tab_account">Account</string>
+    <string name="press_back_twice">Tekan Back 2x Untuk Keluar</string>
+    <string name="onLogin">onLogin</string>
+    <string name="user_name">User Name</string>
+    <string name="user_phone">User Phone</string>
+    <string name="user_email">User Email</string>
+    <string name="rs_name">RSND Ku</string>
+    <string name="logout">Logout</string>
+    <string name="desc_lorem">It is a long established</string>
+
+
+    <!-- PLEASE KEEP THIS App ID IN SAFE PLACE -->
+    <!-- Get your own App ID at https://dashboard.agora.io/ -->
+    <!-- After you entered the App ID, remove <##> outside of Your App ID -->
+    <!--<string name="agora_app_id">aa7c49c09ad74b62adc9f01f62010e1c</string>-->
+    <string name="agora_app_id">9d2bcecf318241119d93d042d844e222</string>
+    <!-- Obtain a temp Access Token at https://dashboard.agora.io -->
+    <!-- You will need to deploy your own token server for production release -->
+    <!-- Leave this value empty if Security keys/Token is not enabled for your project -->
+    <!--<string name="agora_access_token">aa7c49c09ad74b62adc9f01f62010e1c</string>-->
+    <string name="agora_access_token">9d2bcecf318241119d93d042d844e222</string>
+</resources>

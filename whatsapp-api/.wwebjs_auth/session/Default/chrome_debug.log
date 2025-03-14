@@ -1,0 +1,14 @@
+[0624/093308.595:INFO:CONSOLE(7)] "Another connection wants to delete database 'wawc'. Closing db now to resume the delete request.", source: https://web.whatsapp.com/vendor1~bootstrap_qr.010e0b1e6789f30ac249.js (7)
+[0624/093314.636:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0624/093314.636:ERROR:cache_util.cc(146)] Unable to move cache folder D:\Project\whatsapp-api\.wwebjs_auth\session\Default\GPUCache to D:\Project\whatsapp-api\.wwebjs_auth\session\Default\old_GPUCache_000
+[0624/093314.636:ERROR:disk_cache.cc(192)] Unable to create cache
+[0624/093314.636:ERROR:shader_disk_cache.cc(612)] Shader Cache Creation failed: -2
+[0624/093317.671:ERROR:service_worker_storage.cc(1904)] Failed to delete the database: Database IO error
+[0624/093317.954:WARNING:cache_util.cc(97)] Unable to delete cache folder.
+[0624/093414.556:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0624/093414.556:ERROR:cache_util.cc(146)] Unable to move cache folder D:\Project\whatsapp-api\.wwebjs_auth\session\Default\Cache\Cache_Data to D:\Project\whatsapp-api\.wwebjs_auth\session\Default\Cache\old_Cache_Data_001
+[0624/093414.556:ERROR:disk_cache.cc(192)] Unable to create cache
+[0624/093417.498:INFO:CONSOLE(7)] "Another connection wants to delete database 'wawc'. Closing db now to resume the delete request.", source: https://web.whatsapp.com/vendor1~bootstrap_qr.010e0b1e6789f30ac249.js (7)
+[0624/093445.417:INFO:CONSOLE(1)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (1)
+[0624/093445.417:INFO:CONSOLE(1)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (1)
+[0624/093445.421:INFO:CONSOLE(1)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (1)

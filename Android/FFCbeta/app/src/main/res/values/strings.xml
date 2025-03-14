@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FFC beta</string>
+    <string name="result_label">Hasil: %1$s (%2$.2f%%)</string>
+</resources>

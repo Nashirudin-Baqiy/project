@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/button_border">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/adapter_noantri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kode Antri: PAA001"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp" />
+                <TextView
+                    android:id="@+id/adapter_keluhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sering Capek"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp" />
+                <TextView
+                    android:id="@+id/adapter_tgl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02 Juni 2020 07:30"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp" />
+                <TextView
+                    android:id="@+id/adapter_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status: Siap Konsultasi"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/konsul_dokter_plus" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

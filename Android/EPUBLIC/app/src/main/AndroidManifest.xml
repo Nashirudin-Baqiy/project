@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="id.co.rsnasionaldiponegoro.epublic">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="n">
+
+        <!-- untuk maps -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_api" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityLogin"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.accountkit.ui.AccountKitActivity" />
+        <activity android:name="com.facebook.accountkit.ui.AccountKitEmailRedirectActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/ak_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityForm"
+            android:screenOrientation="portrait" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityDetailInfo" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityBunda" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityPendaftaranWeb"
+            android:screenOrientation="portrait" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityJadwalLayanan" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityEmergency" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityContacts" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityArticleList" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityJadwalDokterJadwal" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityArticleChild" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityDetailDokter" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityKritikSaranAdd" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityBundaDiary" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityDiaryBundaRJ" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityDiaryBundaRI" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityStaffDokterList" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityFacility" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityAntrian"
+            android:screenOrientation="landscape" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="id.co.rsnasionaldiponegoro.epublic.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path"
+                tools:replace="android:resource" />
+        </provider>
+
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Pendaftaran.ActivityPendLogin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Pendaftaran.ActivityPendHome"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Pendaftaran.ActivityPendTgl"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Pendaftaran.ActivityPendPoli"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Pendaftaran.ActivityPendDokter"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Pendaftaran.ActivityDetailPendaftaran"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Pendaftaran.ActivityBookingLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Pendaftaran.ActivityBookingList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Pendaftaran.ActivityDetailPendBaru"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Pendaftaran.ActivityBookingListBaru"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityEditKeluarga"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Pendaftaran.ActivityHistoryPendaftaran"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityDetailPromo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Telemedicine.ActivityTelemedicineDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Telemedicine.ActivityTMKonsulHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Telemedicine.ActivityTMDetailBooking"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Telemedicine.Pendaftaran.ActivityTMKonsulAdd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Telemedicine.ActivityTMKonsulDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Telemedicine.ActivityTMTopUpHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Telemedicine.ActivityTMTopUpAdd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Telemedicine.Pendaftaran.ActivityTMKonsulAddPoli"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Telemedicine.Pendaftaran.ActivityTMKonsulAddDokter"
+            android:screenOrientation="portrait" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Telemedicine.Pendaftaran.ActivityTMKonsulAddKeluhan" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Telemedicine.ActivityTMKonsulKuHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Telemedicine.ActivityTMCALL"
+            android:screenOrientation="portrait" />
+        <activity android:name="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityInformConsern"></activity>
+    </application>
+
+</manifest>

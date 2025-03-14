@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_grad_1"
+    tools:context="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Pendaftaran.ActivityPendHome">
+
+    <include layout="@layout/part_actionbar"/>
+
+    <ScrollView
+        android:id="@+id/layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/button_border"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selamat Datang"/>
+
+            <TextView
+                android:id="@+id/pend_nama"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+
+            <View
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:textSize="14sp"
+                android:layout_height="1dp"
+                android:background="@color/colorBlack"/>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/jdl_norm"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="No. RM"/>
+
+                <TextView
+                    android:id="@+id/pend_norm"
+                    android:layout_toRightOf="@+id/jdl_norm"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00000"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/jdl_tgl"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tgl. Lahir"/>
+
+                <TextView
+                    android:id="@+id/pend_tgllhr"
+                    android:layout_toRightOf="@+id/jdl_tgl"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00000"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textAlignment="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:id="@+id/pend_alamat"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:textSize="14sp"
+                android:layout_height="1dp"
+                android:background="@color/colorBlack"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apakah No.Telp/WA Masih Aktif?"/>
+
+            <TextView
+                android:id="@+id/pend_notelp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+
+            <TextView
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jika Tidak Silahkan Masukkan Nomor Telp/WA Yang Bisa Dihubungi"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:id="@+id/form_notelp"
+                    android:textSize="14sp"
+                    android:inputType="number"
+                    android:digits="1234567890"
+                    android:layout_toRightOf="@+id/form_tgllahir_edit_space"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/button_keluar"
+                    android:layout_width="100dp"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Keluar"
+                    android:textColor="@color/colorWhite"/>
+                <Button
+                    android:id="@+id/button_lanjut"
+                    android:layout_width="100dp"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Lanjut"
+                    android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

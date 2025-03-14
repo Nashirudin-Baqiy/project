@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityEditKeluarga">
+    <include layout="@layout/part_actionbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/layout_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Belum Ada Data"
+            android:textAlignment="center"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+        <Button
+            android:id="@+id/button_add_keluarga"
+            android:layout_alignParentBottom="true"
+            android:layout_width="300dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Tambah Keluarga"
+            android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+</LinearLayout>

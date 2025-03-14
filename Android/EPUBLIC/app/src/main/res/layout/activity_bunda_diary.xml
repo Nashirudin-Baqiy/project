@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityBundaDiary">
+    <include layout="@layout/part_actionbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <GridLayout
+            android:layout_centerHorizontal="true"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            /* Menu */
+            <LinearLayout
+                android:id="@+id/button_bunda_rj"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:background="@drawable/button_border"
+                android:layout_height="110dp"
+                android:layout_width="110dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/icon_rawat_inap_masuk"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
+                <TextView
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:text="Rekam Medisku \n Rawat Jalan "
+                    android:lines="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_bunda_ri"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:background="@drawable/button_border"
+                android:layout_height="110dp"
+                android:layout_width="110dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/icon_rawat_inap_aktif"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
+                <TextView
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:text="Rekam Medisku \n Rawat Inap "
+                    android:lines="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </GridLayout>
+    </RelativeLayout>
+</LinearLayout>

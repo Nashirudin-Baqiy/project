@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="id.co.rsnasionaldiponegoro.epublic.Views.Activity.ActivityKritikSaranAdd">
+    <include layout="@layout/part_actionbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:id="@+id/form_nama"
+                    android:layout_alignParentLeft="true"
+                    android:text="Judul "
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/form_nama_space"
+                    android:layout_toRightOf="@+id/form_nama"
+                    android:textSize="14sp"
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/form_nama_value"
+                    android:textSize="14sp"
+                    android:inputType="text"
+                    android:layout_toRightOf="@+id/form_nama_space"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:id="@+id/form_nohp"
+                    android:layout_alignParentLeft="true"
+                    android:text="No.HP "
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/form_nohp_space"
+                    android:layout_toRightOf="@+id/form_nohp"
+                    android:textSize="14sp"
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/form_nohp_value"
+                    android:textSize="14sp"
+                    android:inputType="text"
+                    android:layout_toRightOf="@+id/form_nohp_space"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:id="@+id/form_email"
+                    android:layout_alignParentLeft="true"
+                    android:text="Email "
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/form_email_space"
+                    android:layout_toRightOf="@+id/form_email"
+                    android:textSize="14sp"
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/form_email_value"
+                    android:textSize="14sp"
+                    android:inputType="text"
+                    android:layout_toRightOf="@+id/form_email_space"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:id="@+id/form_desc"
+                    android:layout_alignParentLeft="true"
+                    android:text="Deskripsi"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/form_desc_space"
+                    android:layout_toRightOf="@+id/form_desc"
+                    android:textSize="14sp"
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/form_desc_value"
+                    android:textSize="14sp"
+                    android:inputType="text|textMultiLine"
+                    android:layout_toRightOf="@+id/form_desc_space"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+            </RelativeLayout>
+
+
+
+            <Button
+                android:id="@+id/button_simpan"
+                android:layout_alignParentBottom="true"
+                android:layout_width="300dp"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Kirim"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

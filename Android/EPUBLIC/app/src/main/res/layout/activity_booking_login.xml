@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Pendaftaran.ActivityBookingLogin">
+    <include layout="@layout/part_actionbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/content"
+            android:background="#f2f2f2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/panel_top"
+                android:gravity="center"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pendaftaran Online"
+                    android:textSize="22sp"/>
+                <ImageView
+                    android:visibility="visible"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:src="@drawable/logo_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:background="@color/colorWhite"
+                android:id="@+id/layout_pilihanJenisPasien"
+                android:orientation="vertical"
+                android:layout_below="@+id/panel_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/button_pasienlama"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Pasien Lama"
+                    android:textColor="@color/colorWhite"/>
+                <Button
+                    android:id="@+id/button_pasienbaru"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Pasien Baru"
+                    android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/panel_bottom"
+                android:layout_below="@+id/panel_top"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_gravity="left"
+                        android:text="Nomor Rekam Medis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/form_nocm"
+                        android:visibility="visible"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:hint="No.CM"
+                        android:maxLength="6"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:background="@drawable/input_border"
+                        android:layout_width="280dp"
+                        android:layout_height="45dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_gravity="left"
+                        android:text="Tanggal Lahir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/form_tanggal"
+                        android:visibility="visible"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:hint="Tanggal"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:background="@drawable/input_border"
+                        android:layout_width="280dp"
+                        android:layout_height="45dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_login"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="300dp"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Masuk"
+                    android:textColor="@color/colorWhite"/>
+
+                <Button
+                    android:id="@+id/button_kembali1"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Kembali"
+                    android:textColor="@color/colorWhite"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:textSize="10sp"
+                    android:text="Powered By : Medisimed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/panel_bottom1"
+                android:layout_below="@+id/panel_top"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_gravity="left"
+                        android:text="Nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/form_baru_nama"
+                        android:visibility="visible"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:hint="Nama"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:background="@drawable/input_border"
+                        android:layout_width="280dp"
+                        android:layout_height="45dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_gravity="left"
+                        android:text="Tanggal Lahir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/form_baru_tanggal"
+                        android:visibility="visible"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:hint="Tanggal"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:background="@drawable/input_border"
+                        android:layout_width="280dp"
+                        android:layout_height="45dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_gravity="left"
+                        android:text="Alamat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/form_baru_alamat"
+                        android:visibility="visible"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:hint="Alamat"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:background="@drawable/input_border"
+                        android:layout_width="280dp"
+                        android:layout_height="45dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_gravity="left"
+                        android:text="No.HP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/form_baru_nohp"
+                        android:visibility="visible"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:hint="No.HP"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:background="@drawable/input_border"
+                        android:layout_width="280dp"
+                        android:layout_height="45dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_baru_daftar"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="300dp"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Daftar"
+                    android:textColor="@color/colorWhite"/>
+
+                <Button
+                    android:id="@+id/button_kembali2"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Kembali"
+                    android:textColor="@color/colorWhite"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:textSize="10sp"
+                    android:text="Powered By : Medisimed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

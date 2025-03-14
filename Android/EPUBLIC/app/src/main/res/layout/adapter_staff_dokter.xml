@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+    <android.support.v7.widget.CardView
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <ImageView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/no_image_pegawai"
+                android:id="@+id/dokter_photo"
+                android:layout_width="90dp"
+                android:layout_height="110dp" />
+            <RelativeLayout
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/hint_search"
+                    android:id="@+id/dokter_nama"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+
+                android:visibility="gone"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/layout_atas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:textSize="16sp"
+                            android:text="Nama :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/nik_jdl"
+                            android:layout_marginTop="5dp"
+                            android:text="NIK"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_marginTop="5dp"
+                            android:text="Caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_tgh"
+                        android:layout_toRightOf="@id/layout_atas"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_marginTop="5dp"
+                            android:text=":"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/nik_jdl2"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text=":" />
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_marginTop="5dp"
+                            android:text=":"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_toRightOf="@+id/layout_atas"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/dokter_motto"
+                            android:maxLines="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/dokter_caption"
+                            android:maxLines="1"
+                            android:maxLength="25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

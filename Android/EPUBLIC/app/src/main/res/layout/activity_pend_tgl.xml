@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_grad_1"
+    tools:context="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Pendaftaran.ActivityPendTgl">
+
+    <include layout="@layout/part_actionbar"/>
+
+    <ScrollView
+        android:id="@+id/layout_pendtgl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/button_border"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pend_nama"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+
+            <View
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:textSize="14sp"
+                android:layout_height="1dp"
+                android:background="@color/colorBlack"/>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/jdl_norm"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="No. RM"/>
+
+                <TextView
+                    android:id="@+id/pend_norm"
+                    android:layout_toRightOf="@+id/jdl_norm"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00000"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/jdl_tgl"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tgl. Lahir"/>
+
+                <TextView
+                    android:id="@+id/pend_tgllhr"
+                    android:layout_toRightOf="@+id/jdl_tgl"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00000"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/jdl_tlp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="No.Telp"/>
+
+                <TextView
+                    android:id="@+id/pend_notelp"
+                    android:layout_toRightOf="@id/jdl_tlp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00000"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:id="@+id/pend_alamat"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:textSize="14sp"
+                android:layout_height="1dp"
+                android:background="@color/colorBlack"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silahkan Pilih Tanggal Periksa"/>
+
+            <Spinner
+                android:background="@drawable/button_border"
+                android:layout_gravity="center"
+                android:id="@+id/spinner_tglperiksa"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"></Spinner>
+
+            <TextView
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Penjamin"/>
+
+            <RadioGroup
+                android:layout_margin="5dp"
+                android:id="@+id/radioGroup"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_umum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UMUM"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_bpjs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BPJS"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_asuransi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ASURANSI"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"/>
+            </RadioGroup>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/layout_norujukan"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:text="Pengisian No.Rujukan dapat di ketik atau scan menggunakan barcode."
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/iv_contoh_scan"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <EditText
+                        android:visibility="visible"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:id="@+id/noRujukan"
+                        android:textSize="14sp"
+                        android:inputType="text"
+                        android:hint="No Rujukan BPJS"
+                        android:layout_weight="1"
+                        android:layout_toRightOf="@+id/form_tgllahir_edit_space"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                    <Button android:text="Scan"
+                        android:id="@+id/btnNoRujukanScan"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/colorWhite"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_pilihAsuransi"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:text="Silahkan Memilih Penjamin Asuransi"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Spinner
+                        android:background="@drawable/button_border"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:id="@+id/spinner_penjamin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <EditText
+                android:visibility="gone"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:id="@+id/form_tglperiksa"
+                android:textSize="14sp"
+                android:inputType="date"
+                android:hint="Tanggal Periksa"
+                android:focusable="false"
+                android:layout_toRightOf="@+id/form_tgllahir_edit_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/button_kembali"
+                    android:layout_width="100dp"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Kembali"
+                    android:textColor="@color/colorWhite"/>
+                <Button
+                    android:id="@+id/button_lanjut"
+                    android:layout_width="100dp"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Lanjut"
+                    android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+            <TextView
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anda Sudah Terdaftar pada:"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

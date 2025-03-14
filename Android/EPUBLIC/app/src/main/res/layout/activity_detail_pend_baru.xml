@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_grad_1"
+    tools:context="id.co.rsnasionaldiponegoro.epublic.Views.Activity.Pendaftaran.ActivityDetailPendBaru">
+    <!--<include layout="@layout/part_actionbar"/>-->
+    <include layout="@layout/part_actionbar"/>
+    <ScrollView
+        android:id="@+id/layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/button_border"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selamat Datang"/>
+
+            <TextView
+                android:id="@+id/tv_nama"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+
+            <View
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:textSize="14sp"
+                android:layout_height="1dp"
+                android:background="@color/colorBlack"/>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/jdl_norm"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="No.RM"/>
+
+                <TextView
+                    android:id="@+id/tv_norm"
+                    android:layout_toRightOf="@+id/jdl_norm"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00000"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/jdl_tgl"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tgl.Lahir"/>
+
+                <TextView
+                    android:id="@+id/tv_tgllhr"
+                    android:layout_toRightOf="@+id/jdl_tgl"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00000"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:id="@+id/headline_text"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:textSize="14sp"
+                android:layout_height="1dp"
+                android:background="@color/colorBlack"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anda terdaftar berobat, pada:"/>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tgl_jdl"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/colorRed"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal  "/>
+                    <TextView
+                        android:layout_toRightOf="@id/tgl_jdl"
+                        android:id="@+id/tv_detail_tgl"
+                        android:textColor="@color/colorRed"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/pukul_jdl"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/colorRed"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pukul  "/>
+                    <TextView
+                        android:layout_toRightOf="@id/pukul_jdl"
+                        android:id="@+id/tv_detail_pukul"
+                        android:textColor="@color/colorRed"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/poli_jdl"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/colorRed"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Poli  "/>
+                    <TextView
+                        android:layout_toRightOf="@id/poli_jdl"
+                        android:id="@+id/tv_detail_poli"
+                        android:textColor="@color/colorRed"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/jdl_dokter"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/colorRed"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Dokter  "/>
+                    <TextView
+                        android:layout_toRightOf="@id/jdl_dokter"
+                        android:id="@+id/tv_detail_dokter"
+                        android:textColor="@color/colorRed"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_detail_nobook_jdl"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="No.Trans  "
+                        android:textColor="@color/colorRed"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_toRightOf="@id/tv_detail_nobook_jdl"
+                        android:id="@+id/tv_detail_nobook"
+                        android:textColor="@color/colorRed"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/colorRed"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="No.Booking "
+                        android:id="@+id/tv_detail_nourut_jdl" />
+                    <TextView
+                        android:layout_toRightOf="@id/tv_detail_nourut_jdl"
+                        android:id="@+id/tv_detail_nourut"
+                        android:textColor="@color/colorRed"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/colorRed"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="No.CS "
+                        android:id="@+id/tv_detail_nocs_jdl" />
+                    <TextView
+                        android:layout_toRightOf="@id/tv_detail_nocs_jdl"
+                        android:id="@+id/tv_detail_nocs"
+                        android:textColor="@color/colorRed"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_waktu_perkiraan"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dimohon datang sebelumnya. Antrian tidak berlaku apabila anda datang lebih dari 30 menit dari perkiraan waktu layanan. Terimakasih "/>
+
+            <ImageView
+                android:background="@drawable/button_border"
+                android:id="@+id/iv_qrcode"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="200dp" />
+
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/button_keluar"
+                    android:layout_width="100dp"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Selesai"
+                    android:textColor="@color/colorWhite"/>
+                <Button
+                    android:id="@+id/button_batal"
+                    android:layout_width="100dp"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorRed"
+                    android:text="Batal"
+                    android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
